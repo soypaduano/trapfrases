@@ -2,6 +2,15 @@
   
 }
 
+body{
+    font-family: 'Bangers', cursive;
+    letter-spacing: 0.5px;
+}
+
+.frase-rapero{
+    font-size: 150%;
+}
+
 .raper-title{
     text-align: center;
 }
@@ -10,4 +19,20 @@
     position: relative;
     margin-right: 0px;
     display: inline-block;
+    letter-spacing: 5px;
+}
+
+.download-button{
+    position: relative;
+    margin-right: 0px;
+    display: inline-block;
+    letter-spacing: 5px;
+}
+
+
+.raper-photo{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    text-align: center
 }

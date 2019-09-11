@@ -1,70 +1,79 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <title>Frases del trap</title>
-        <meta charset="utf-8">
-        <meta name="author" content="MWHE 2018/19">
-        <meta name="description" content="Práctica 4 de maquetación web con hojas de estilo">
-        <meta name="keywords" content="html, css, web">
-        <meta name="viewport" content="width=device-width,initial-scale=1.0">
-        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-        <link rel="stylesheet" type="text/css" href="styles.css">
-    </head>
-    <body>
-        <!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark primary-color">
 
-        <nav class="navbar navbar-default">
-                <div class="container-fluid">
-                  <div class="navbar-header">
-                    <a class="navbar-brand" href="#">Elige el personaje</a>
-                  </div>
-                  <ul class="nav navbar-nav">
-                    <li><a href="#">Yung Beef</a></li>
-                    <li><a href="#">Cecilio</a></li>
-                    <li><a href="#">Pistoleros del Eclipse</a></li>
-                    <li><a href="#">Kid Keo</a></li>
-                  </ul>
+<head>
+  <title>Frases del trap</title>
+  <meta charset="utf-8">
+  <meta name="author" content="MWHE 2018/19">
+  <meta name="description" content="Práctica 4 de maquetación web con hojas de estilo">
+  <meta name="keywords" content="html, css, web">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script src="controller.js"></script>
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-expand-lg navbar-dark primary-color">
+
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#">Elige el personaje</a>
+        </div>
+        <ul class="nav navbar-nav">
+          <li><a href="#">Yung Beef</a></li>
+          <li><a href="#">Cecilio</a></li>
+          <li><a href="#">Pistoleros del Eclipse</a></li>
+          <li><a href="#">Kid Keo</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </nav>
+
+
+  <div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8">
+      <section id="section-yung-beef">
+        <div class="list-content">
+          <div class="row">
+            <h3 class="raper-title"> Yung Beef
+              <img src="images/yungbeef-imagen.png" class="img-rounded" width="100" height="150">
+            </h3>
+          </div>
+          <ul class="list-group">
+            <li class="list-group-item test list-group-item-primary">
+              <div class="col-sm-4">
+                <div class="frase-rapero">
+                  Esto es una frase de un rapero
                 </div>
-              </nav>
-
-
-              <div class="row">
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-8">
-                        <div class="list-content">
-                            <h3 class="raper-title"> Nombre de rapero </h3>
-                                <ul class="list-group">
-                                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                                        <li class="list-group-item list-group-item-primary">
-                                            <div class="col-sm-4">
-                                                   <div class="frase-rapero">
-                                                       Eyo ma nigga
-                                                   </div>
-                                            </div>
-                                            <div class="play-button">
-                                                    <button type="button" class="btn btn-primary btn-sm">Reproducir</button>
-                                            </div>
-                                        </li>
-                                        <li class="list-group-item list-group-item-secondary">This is a secondary list group item</li>
-                                        <li class="list-group-item list-group-item-success">This is a success list group item</li>
-                                        <li class="list-group-item list-group-item-danger">This is a danger list group item</li>
-                                        <li class="list-group-item list-group-item-warning">This is a warning list group item</li>
-                                        <li class="list-group-item list-group-item-info">This is a info list group item</li>
-                                        <li class="list-group-item list-group-item-light">This is a light list group item</li>
-                                        <li class="list-group-item list-group-item-dark">This is a dark list group item</li>
-                                      </ul>
-
-
-                        </div>
-                    </div>
-                    <div class="col-sm-2"></div>
-                  </div>
+              </div>
+              <div class="play-button">
+                <button type="button" class="btn btn-primary btn-sm">
+                  <img src="images/play-button-image.png" width="30" />
+                </button>
+              </div>
+              <div class="download-button">
+                <button type="button" class="btn btn-primary btn-sm">
+                  <img src="images/download-button-image.png" width="30" />
+                </button>
+              </div>
+            </li>
 
 
 
-    </body>
+          </ul>
+        </div>
+      </section>
+    </div>
+  </div>
+</body>
+
 </html>
