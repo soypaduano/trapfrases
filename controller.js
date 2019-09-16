@@ -1,4 +1,4 @@
-var rapers = ["yung-beef", "cecilio"]
+var rapers = ["yung-beef", "pistoleros", "cecilio"]
 var soundPlayer;
 var currentRapperNumber = 0;
 var appendHtmlListElementExample;
@@ -42,8 +42,13 @@ function addSectionOfRapper(currentRapper){
 }
 
 function changeTitleAndImage(section, currentRapper){
+  var height = 150;
+  var width = 100;
   $(section).find('.raper-title').text(currentRapper);
-  var image = "<img src='images/" + currentRapper + ".png' class='img-rounded rapper' width='100' height='150'></img>"
+  if(currentRapper == 'pistoleros'){
+    width = 200;
+  }
+  var image = "<img src='images/" + currentRapper + ".png' class='img-rounded rapper' width='" + width + "' height='" + height + "'></img>"
   $(section).find('.raper-title').append(image);
 }
 
@@ -51,6 +56,7 @@ function addHtmlAudioFila(res, i, section){
   var htmlListElement = $('.template').find('.list-group-item').clone();
   $(htmlListElement).find('.frase-rapero').text(res[i]);
   $(htmlListElement).attr('id', res[++i]);
+  addEventListenerPlayAudio(htmlListElement);
   addEventListenerDownloadAudio(htmlListElement);
   $(section).find('.list-group').append(htmlListElement);
 }

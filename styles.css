@@ -9,6 +9,7 @@ body{
 
 .frase-rapero{
     font-size: 150%;
+   
 }
 
 .raper-title{
@@ -30,9 +31,9 @@ body{
 }
 
 
-.raper-photo{
-    background-color: red;
-    width: 20px;
-    height: 20px;
-    text-align: center
+.img-rounded.rapper{
+    margin-left: 40px;
 }
+
+.black-background {background-color:#000000;}
+.white {color:#ffffff;}
