@@ -14,6 +14,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+  <script src="libraries/animatescroll.js"></script>
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="controller.js"></script>
 </head>
@@ -28,8 +29,8 @@
           <a class="navbar-brand" href="#">Elige el personaje</a>
         </div>
         <ul class="nav navbar-nav">
-          <li><a href="#">Yung Beef</a></li>
-          <li><a href="#">Cecilio</a></li>
+          <li><a onclick="$('#section-yung-beef').animatescroll()">Yung Beef</a></li>
+          <li><a onclick="$('#section-cecilio').animatescroll()">Cecilio</a></li>
           <li><a href="#">Pistoleros del Eclipse</a></li>
           <li><a href="#">Kid Keo</a></li>
         </ul>
@@ -38,42 +39,47 @@
 
   </nav>
 
-
   <div class="row">
     <div class="col-sm-2"></div>
-    <div class="col-sm-8">
-      <section id="section-yung-beef">
+    <div id="container-rappers" class="col-sm-8">
+      <section class="section-rapper" id="plantilla-section">
         <div class="list-content">
           <div class="row">
-            <h3 class="raper-title"> Yung Beef
-              <img src="images/yungbeef-imagen.png" class="img-rounded" width="100" height="150">
+            <h3 class="raper-title"> Nombre de rapero
             </h3>
           </div>
+
           <ul class="list-group">
-            <li class="list-group-item test list-group-item-primary">
-              <div class="col-sm-4">
-                <div class="frase-rapero">
-                  Esto es una frase de un rapero
-                </div>
-              </div>
-              <div class="play-button">
-                <button type="button" class="btn btn-primary btn-sm">
-                  <img src="images/play-button-image.png" width="30" />
-                </button>
-              </div>
-              <div class="download-button">
-                <button type="button" class="btn btn-primary btn-sm">
-                  <img src="images/download-button-image.png" width="30" />
-                </button>
-              </div>
-            </li>
-
-
-
+            
           </ul>
+          
         </div>
       </section>
     </div>
+  </div>
+
+
+
+  <div class="template">
+    <ul class="list-group">
+      <li class="list-group-item list-group-item-primary">
+        <div class="col-sm-4">
+          <div class="frase-rapero">
+            
+          </div>
+        </div>
+        <div class="play-button">
+          <button type="button" class="btn btn-primary btn-sm">
+            <img src="images/play-button-image.png" width="30" />
+          </button>
+        </div>
+        <a class="download-button"  href="audios/cecilio/mehanviolado.ogg" download="frases-del-trap.mp3">
+          <button type="submit" class="btn btn-primary btn-sm">
+            <img src="images/download-button-image.png" width="30" />
+          </button>
+        </a>
+      </li>
+    </ul>
   </div>
 </body>
 
