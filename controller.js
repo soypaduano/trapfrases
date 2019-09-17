@@ -1,4 +1,4 @@
-var rapers = ["yung-beef", "pistoleros", "cecilio"]
+var rapers = ["yung-beef", "pistoleros", "cecilio", "kidkeo"]
 var soundPlayer;
 var currentRapperNumber = 0;
 var appendHtmlListElementExample;
@@ -58,6 +58,7 @@ function addHtmlAudioFila(res, i, section){
   $(htmlListElement).attr('id', res[++i]);
   addEventListenerPlayAudio(htmlListElement);
   addEventListenerDownloadAudio(htmlListElement);
+  addEventListenerShare(htmlListElement);
   $(section).find('.list-group').append(htmlListElement);
 }
 
@@ -95,4 +96,39 @@ function addEventListenerDownloadAudio(listElement){
     $(this).attr('href', "audios/" + currentRappertoPlay + "/" + audioIdToPlay + ".ogg");
   });
 
+}
+
+function addEventListenerShare(listElement){
+  $(listElement).find('.share-button').on('click touchstart', function () {
+    var isMobile = {
+      Android: function() {
+      return navigator.userAgent.match(/Android/i);
+      },
+      BlackBerry: function() {
+      return navigator.userAgent.match(/BlackBerry/i);
+      },
+      iOS: function() {
+      return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+      },
+      Opera: function() {
+      return navigator.userAgent.match(/Opera Mini/i);
+      },
+      Windows: function() {
+      return navigator.userAgent.match(/IEMobile/i);
+      },
+      any: function() {
+      return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+      }
+      };
+      if( isMobile.any() ) {
+      var text = "test"
+      var url = "escucha la frase de este rapero"
+      var message = encodeURIComponent(text) + " - " + encodeURIComponent(url);
+      var whatsapp_url = "whatsapp://send?text=" + message;
+      window.location.href = whatsapp_url;
+      } else {
+        //TODO: Poner el compartir correctamente en FB.
+        window.open('http://www.facebook.com/dialog/send?app_id=2391736657811319&link=http://www.nytimes.com/interactive/2015/04/15/travel/europe-favorite-streets.html&redirect_uri=https://www.domain.com/');
+      }
+});
 }
