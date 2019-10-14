@@ -90,7 +90,6 @@ function addEventListenerPlayAudio(listElement){
 function addEventListenerDownloadAudio(listElement){
 
   $(listElement).find('.download-button').on('click touchstart', function () {
-
     var audioIdToPlay = $(this).parent().attr('id');
     var currentRappertoPlay = $(this).parent().parent().attr("id");
     $(this).attr('href', "audios/" + currentRappertoPlay + "/" + audioIdToPlay + ".ogg");
@@ -121,14 +120,15 @@ function addEventListenerShare(listElement){
       }
       };
       if( isMobile.any() ) {
-      var text = "test"
+      var text = "Eyo bro"
       var url = "escucha la frase de este rapero"
       var message = encodeURIComponent(text) + " - " + encodeURIComponent(url);
       var whatsapp_url = "whatsapp://send?text=" + message;
       window.location.href = whatsapp_url;
       } else {
-        //TODO: Poner el compartir correctamente en FB.
-        window.open('http://www.facebook.com/dialog/send?app_id=2391736657811319&link=http://www.nytimes.com/interactive/2015/04/15/travel/europe-favorite-streets.html&redirect_uri=https://www.domain.com/');
+        var url = "www.frasesdeltrap.com";
+        var text = "Escuchad todas las frases de raperos en www.frasesdeltrap.com";
+        window.open('http://twitter.com/share?url='+encodeURIComponent(url)+'&text='+encodeURIComponent(text), '', 'left=0,top=0,width=550,height=450,personalbar=0,toolbar=0,scrollbars=0,resizable=0');    
       }
 });
 }

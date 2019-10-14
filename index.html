@@ -18,6 +18,11 @@
   <link rel="stylesheet" type="text/css" href="styles.css">
   <script src="controller.js"></script>
 
+  <link rel="icon" href="http://example.com/favicon.png">
+
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v4.0&appId=2391736657811319&autoLogAppEvents=1"></script>
+
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share-kit/1.0.15/css/social-share-kit.css" type="text/css">
 </head>
@@ -25,17 +30,6 @@
 <body>
   <!--Navbar-->
   <nav class="navbar navbar-expand-lg navbar-dark primary-color">
-
-      <div class="ssk-group">
-          <a href="" class="ssk ssk-facebook"></a>
-          <a href="" class="ssk ssk-twitter"></a>
-          <a href="" class="ssk ssk-google-plus"></a>
-          <a href="" class="ssk ssk-pinterest"></a>
-          <a href="" class="ssk ssk-tumblr"></a>
-      </div>
-
-      <a href=”fb-messenger://share/?link='https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fsharing%2Freference%2Fsend-dialog'&app_id=”>Send In Messenger</a>
-
     <nav class="navbar navbar-default">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -44,9 +38,16 @@
         <ul class="nav navbar-nav">
           <li><a onclick="$('#section-yung-beef').animatescroll()">Yung Beef</a></li>
           <li><a onclick="$('#section-cecilio').animatescroll()">Cecilio</a></li>
-          <li><a href="$('#section-pistoleros').animatescroll()">Pistoleros del Eclipse</a></li>
-          <li><a href="#">Kid Keo</a></li>
-          <li><a href="#">Trabaja con nosotros</a></li>
+          <li><a onclick="$('#section-pistoleros').animatescroll()">Pistoleros</a></li>
+          <li><a onclick="$('#section-kidkeo').animatescroll()">Kidd Keo</a></li>
+          <li id="workWithUs">
+            <a>€ Trabaja con nosotros €</a>
+            <script>
+              $('#workWithUs').on('click touchstart', function () {
+                alert("Escribenos en @frasesdeltrap_app , pagamos €€€€");
+              });
+            </script>
+          </li>
         </ul>
       </div>
     </nav>
@@ -94,5 +95,35 @@
       </li>
     </ul>
   </div>
+
+  
 </body>
+
+
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
+
+    <!-- Footer Elements -->
+    <div class="container">
+  
+      <!-- Call to action -->
+      <ul class="list-unstyled list-inline text-center py-2">
+        <li class="list-inline-item">
+          <h5 class="mb-1">SIGUENOS EN INSTAGRAM: @frasesdeltrap_app</h5>
+        </li>
+      </ul>
+      <!-- Call to action -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3"> 2019 D3s4rr0ll4d0 x pvDv
+      <a href="https://www.instagram.com/trapgame.edits/?hl=es"> Tirame beef </a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
+
 </html>
