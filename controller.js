@@ -1,4 +1,5 @@
-var rapers = ["yung-beef", "pistoleros", "cecilio", "kidkeo"]
+//paleta de colores vaporwape: https://www.color-hex.com/color-palette/55041
+var rapers = ["yung-beef", "pistoleros", "cecilio", "kidkeo", "misc"]
 var soundPlayer;
 var currentRapperNumber = 0;
 var appendHtmlListElementExample;
@@ -62,8 +63,6 @@ function addHtmlAudioFila(res, i, section){
   $(section).find('.list-group').append(htmlListElement);
 }
 
-
-
 //Listeners to buttons inside row.
 function addEventListenerPlayAudio(listElement){
  $(listElement).find('.play-button').on('click touchstart', function () {
@@ -71,6 +70,7 @@ function addEventListenerPlayAudio(listElement){
   var audioIdToPlay = $(this).parent().attr('id');
   var currentRappertoPlay = $(this).parent().parent().attr("id");
   if(soundPlayer){
+    soundPlayer = checkSound(currentRappertoPlay, soundPlayer);
     if(soundPlayer.playing){
       soundPlayer.pause();
     }
@@ -85,6 +85,15 @@ function addEventListenerPlayAudio(listElement){
 
  });
 
+}
+
+function checkSound(rapper, soundPlayer){
+  if(rapper == "cecilio"){
+    soundPlayer.volume = 0.2;
+  } else {
+    soundPlayer.volume = 3;
+  }
+  return soundPlayer;
 }
 
 function addEventListenerDownloadAudio(listElement){

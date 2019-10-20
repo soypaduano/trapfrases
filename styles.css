@@ -1,10 +1,24 @@
-.list-content{
-  
-}
+
 
 body{
-    font-family: 'Bangers', cursive;
+    font-family: 'Comic-Sans', cursive;
     letter-spacing: 0.5px;
+    color: aquamarine;
+    background-color: #b967ff 
+    /*cursor: url("images/hakim_mouse.png"), auto;*/
+}
+
+.container-fluid{
+    background-color: #fffb96;
+    color: aquamarine;
+}
+
+.list-group-item{
+    background-color: rebeccapurple; 
+}
+
+a{
+    cursor: pointer;
 }
 
 .frase-rapero{
@@ -12,7 +26,14 @@ body{
    
 }
 
+img:hover{
+    transform: rotate(360deg);
+    transition: all 0.3s ease-in-out 0s;
+    animation-iteration-count: infinite;
+}
+
 .raper-title{
+    font-size: 34px;
     text-align: center;
 }
 
