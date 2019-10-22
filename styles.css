@@ -4,7 +4,7 @@
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 body{
-    font-family: 'Comic-Sans', cursive;
+    font-family: 'Comic-Sans';
     letter-spacing: 0.5px;
     color: aquamarine;
     background-color: #b967ff;
