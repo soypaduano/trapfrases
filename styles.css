@@ -17,7 +17,7 @@ body{
 }
 
 .list-group-item{
-    background-color: rebeccapurple; 
+    background-image: url(images/pattern_background.png)
 }
 
 a{
@@ -26,7 +26,8 @@ a{
 
 .frase-rapero{
     font-size: 150%;
-   
+    font-style: oblique;  
+    font-weight: bold;
 }
 
 img:hover{
@@ -63,3 +64,8 @@ img:hover{
 
 .black-background {background-color:#000000;}
 .white {color:#ffffff;}
+
+
+#louisvi{
+    background-image: url(images/pattern_background.png);
+}
