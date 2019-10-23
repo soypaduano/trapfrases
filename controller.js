@@ -134,8 +134,8 @@ function addEventListenerShare(listElement){
       }
       };
       if( isMobile.any() ) {
-      var text = "Eyo bro"
-      var url = "escucha la frase de este rapero"
+      var text = "Eyo bro, cata que mofa esta web: "
+      var url = "www.frasesdeltrap.com"
       var message = encodeURIComponent(text) + " - " + encodeURIComponent(url);
       var whatsapp_url = "whatsapp://send?text=" + message;
       window.location.href = whatsapp_url;
@@ -149,12 +149,6 @@ function addEventListenerShare(listElement){
 }
 
 $( document ).ready(function() {
-
-  $('body').on('click touchstart', function(){
-
-  });
-
-
   $('#workWithUs').on('click touchstart', function () {
     soundPlayer = new Howl({
       src: ['audios/misc/gemidos.ogg'],
