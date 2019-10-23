@@ -6,6 +6,12 @@ var appendHtmlListElementExample;
 
 
 createRappersSections();
+createHowl();
+
+
+function createHowl(){
+  Howl.autoUnlock = true;
+}
 
 function createRappersSections(){
   $('.list-group-item.test').clone(); //lo copio
@@ -75,7 +81,7 @@ function addEventListenerPlayAudio(listElement){
       soundPlayer.pause();
     }
   }
-  
+
   soundPlayer = new Howl({
     src: ['audios/' + currentRappertoPlay + '/' + audioIdToPlay + '.ogg'],
     volume: 3
@@ -143,6 +149,12 @@ function addEventListenerShare(listElement){
 }
 
 $( document ).ready(function() {
+
+  $('body').on('click touchstart', function(){
+
+  });
+
+
   $('#workWithUs').on('click touchstart', function () {
     soundPlayer = new Howl({
       src: ['audios/misc/gemidos.ogg'],
