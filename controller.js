@@ -10,7 +10,6 @@ createHowl();
 
 
 function createHowl(){
-  Howl.autoUnlock = true;
 }
 
 function createRappersSections(){
