@@ -4,9 +4,13 @@
 @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
 
 
+@font-face {
+    font-family: 'Comic Sans MS';
+    src: url("libraries/comici.ttf");
+  }
 
 body{
-    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-family: 'Comic Sans MS';
     letter-spacing: 0.5px;
     color: aquamarine;
     background-color: #b967ff;
@@ -32,14 +36,6 @@ a{
     font-weight: bold;
 }
 
-@-webkit-keyframes glow {
-    from {
-      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
-    }
-    to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
-    }
-}
 
 img:hover{
     -webkit-animation:spin 1s linear infinite;

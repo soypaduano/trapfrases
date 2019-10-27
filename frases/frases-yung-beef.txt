@@ -6,8 +6,6 @@ Copiar al sistema
 copiarTacticaSistema
 Culo en Colombia
 culoEnColombia
-Desfilar en la moda
-desfilarEnLaModa
 Dinero alcalde
 dineroAlcalde
 El estudio es un punto
@@ -44,8 +42,6 @@ Necesitamos dinero
 necesitamosDineroParaVivir
 No hay ni fiesta
 noHayNiFiesta
-Pasarela y diablo
-pasarelaDiablo
 Peli batman
 peliculaBatman
 quiero para vender

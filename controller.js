@@ -82,7 +82,7 @@ function addEventListenerPlayAudio(listElement){
   }
 
   soundPlayer = new Howl({
-    src: ['audios/' + currentRappertoPlay + '/' + audioIdToPlay + '.ogg'],
+    src: ['audios/' + currentRappertoPlay + '/' + audioIdToPlay + '.ogg','audios/' + currentRappertoPlay + '/' + audioIdToPlay + '.mp3' ],
     volume: 3
   });
 
