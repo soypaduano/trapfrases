@@ -13,7 +13,7 @@ body{
     font-family: 'Comic Sans MS';
     letter-spacing: 0.5px;
     color: aquamarine;
-    background-color: #b967ff;
+    background-image: linear-gradient(to bottom, #b967ff, #4d0988);
     cursor: url("images/hakim_mouse.png"), auto;
 }
 
@@ -57,7 +57,7 @@ img:hover{
 }
 
 .raper-title{
-    font-size: 34px;
+    font-size: 65px;
     text-align: center;
     -webkit-animation: glow 1s ease-in-out infinite alternate;
     -moz-animation: glow 1s ease-in-out infinite alternate;

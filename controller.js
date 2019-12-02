@@ -133,7 +133,7 @@ function addEventListenerShare(listElement){
       }
       };
       if( isMobile.any() ) {
-      var text = "Eyo bro, cata que mofa esta web: "
+      var text = "Eyo, mira que risa esta web "
       var url = "www.frasesdeltrap.com"
       var message = encodeURIComponent(text) + " - " + encodeURIComponent(url);
       var whatsapp_url = "whatsapp://send?text=" + message;
@@ -154,6 +154,6 @@ $( document ).ready(function() {
       volume: 3
     });
     soundPlayer.play();
-    alert("Escribenos en @frasesdeltrap_app , pagamos €€€€");
+    alert("Escribenos en @www_frasesdeltrap_com , pagamos €€€€");
   });
 });
